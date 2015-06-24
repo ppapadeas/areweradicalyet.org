@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
     <head>
-        <title>Are we reorganized yet?</title>
+        <title>Are we radical yet?</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
 
@@ -47,48 +47,6 @@ ul {
     </head>
 
     <body class="vbox">
-        <h1 id="answer" class="flex">WAIT</h1>
-        <h2>Days since last reorg: <strong id="last-reorg-days"></strong></h2>
-        <h2>Expected reorg in <strong id="next-reorg-days"></strong> days</h2>
-        <ul>
-            <li>(since June 18th, 2015)</li>
-            <li class="old">(since June 5th, 2015)</li>
-            <li class="old">(since May 28th, 2015)</li>
-            <li class="old">(since May 20, 2015)</li>
-            <li class="old">(since May 4, 2015)</li>
-            <li class="old">(since April 21, 2015)</li>
-            <li class="old">(since April 14, 2015)</li>
-            <li class="old">(since March 27, 2015)</li>
-        </ul>
-
-        <script>
-var FIRST_REORG_TIME = +new Date('2015-03-27');
-var LAST_REORG_TIME = +new Date('2015-06-18');
-
-function require(name) {
-    switch (name) {
-        case 'jquery': return document.getElementById.bind(document);
-        default: alert('unimplemented library!!!!1!');
-    }
-}
-
-var NOW = +new Date();
-var ONE_DAY = 24 * 60 * 60 * 1000;
-
-var $ = require('jquery');
-
-var daysSinceLastReorg = Math.floor((NOW - LAST_REORG_TIME) / ONE_DAY);
-
-$('last-reorg-days').textContent = daysSinceLastReorg;
-
-var numberOfReorgs = document.getElementsByTagName('li').length;
-var avgTimeBetweenReorgs = (LAST_REORG_TIME - FIRST_REORG_TIME) / numberOfReorgs;
-var expectedNextReorg = LAST_REORG_TIME + avgTimeBetweenReorgs;
-var daysToNextReorg = Math.ceil((expectedNextReorg - NOW) / ONE_DAY);
-
-$('next-reorg-days').textContent = daysToNextReorg;
-
-$('answer').textContent = daysToNextReorg > 0 ? 'YES' : 'NO';
-        </script>
+        <h1 id="answer" class="flex">NO</h1>
     </body>
 </html>

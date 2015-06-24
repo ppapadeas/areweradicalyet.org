@@ -1,5 +1,5 @@
-# arewereorganizedyet.com
-are we reorganized yet?
+# areweradicalyet.org
+are we radical yet?
 
 # Licence
 
